@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3100; // Use environment variable for port or d
 // Database connection
 db.connect();
 
-// Middleware
+// Middleware req and response
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
-// CORS
+// CORS setup communication
 app.use(cors());
 
 // Routes

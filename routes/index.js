@@ -10,7 +10,7 @@ const teacherLoginRouter = require("./TeacherLogin");
 const notesRouter = require("./Notes");
 
 router.get("/", (req, res) => {
-  res.send("This API is reserved for connectStudents");
+  res.send("This API is reserved for EduLink");
 });
 
 router.use("/questions", questionRouter);
