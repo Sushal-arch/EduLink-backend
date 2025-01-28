@@ -18,7 +18,8 @@ function calculateSimilarity(questions, targetQuestion) {
   // Create a combined vocabulary
   const vocabulary = [...new Set(questionTokens.flat().concat(targetTokens))];
 
-  // Log the combined vocabulary
+  // Log the combined vo
+
   console.log("Vocabulary:", vocabulary);
 
   // Vectorize questions and the target question
@@ -50,6 +51,7 @@ function calculateSimilarity(questions, targetQuestion) {
   });
 
   // Sort by similarity in descending order
+
   const sortedSimilarities = similarities.sort(
     (a, b) => b.weightedSimilarity - a.weightedSimilarity
   );
